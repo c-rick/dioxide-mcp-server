@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/c-rick/dioxide-mcp-server/compare/v1.2.0...v1.3.0) (2025-04-17)
+
+
+### Features
+
+* update build with tsup ([67a708c](https://github.com/c-rick/dioxide-mcp-server/commit/67a708ce35b8e5f6da00df66a11964ec1411abd0))
+
 ## [1.2.0](https://github.com/c-rick/dioxide-mcp-server/compare/v1.1.0...v1.2.0) (2025-04-17)
 
 
