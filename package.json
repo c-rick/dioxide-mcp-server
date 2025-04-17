@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsx ./src/index.ts",
-    "build": "tsc --build"
+    "build": "tsup --dts"
   },
   "bin": {
     "dioxide": "./lib/index.js"
@@ -20,9 +20,12 @@
   "description": "",
   "repository": "git@github.com:c-rick/dioxide-mcp-server.git",
   "dependencies": {
-    "@dioxide-js/web3.js": "^0.0.13",
+    "@dioxide-js/web3.js": "^0.0.14",
     "@modelcontextprotocol/sdk": "^1.9.0",
     "@types/node": "^22.14.1",
     "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0"
   }
 }

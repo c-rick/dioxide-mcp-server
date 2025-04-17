@@ -37,6 +37,46 @@ yarn start
 yarn build
 ```
 
+## MCP 配置使用说明
+
+### 客户端配置
+
+在客户端中使用本服务，需要在 MCP 配置中添加相应的 JSON 配置。以下是配置示例：
+
+```json
+{
+  "services": [
+    {
+      "name": "dioxide-testnet-faucet",
+      "endpoint": "https://your-server-address/api",
+      "tools": [
+        {
+          "name": "faucet",
+          "description": "获取测试网络 Dioxide 代币",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "address": {
+                "type": "string",
+                "description": "接收代币的地址"
+              }
+            },
+            "required": ["address"]
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+### 使用方法
+
+1. 将上述 JSON 配置添加到您的 MCP 客户端配置中
+2. 确保将 `endpoint` 修改为实际部署的服务器地址
+3. 在客户端中调用 `faucet` 工具，并提供接收代币的地址
+4. 服务器将处理请求并返回交易哈希
+
 ## API
 
 ### 水龙头服务

@@ -1,6 +1,6 @@
+import { Web3, NET } from '@dioxide-js/web3.js'
 import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js"
 import { z } from "zod"
-import { Web3, NET } from '@dioxide-js/web3.js';
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { decode } from 'base64-arraybuffer'
 
