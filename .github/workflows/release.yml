@@ -20,7 +20,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Setup git config
         run: |
-          git config user.name "c-rick"
+          git config user.name "GitHub Actions Bot"
           git config user.email "<>"
       - name: Update Changelog
         env:
