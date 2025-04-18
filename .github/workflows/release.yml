@@ -2,7 +2,7 @@ name: Release
 on:
   push:
     branches:
-      - main
+      - release
   workflow_dispatch:
 jobs:
   release:
@@ -20,15 +20,14 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Setup git config
         run: |
-          git config user.name "c-rick"
+          git config user.name "GitHub Actions Bot"
           git config user.email "<>"
       - name: Update Changelog
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npx standard-version
-          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}.git
-          git push --follow-tags origin main
+          git push --follow-tags origin release
       - name: Install & Build & Test
         run: |
           yarn
@@ -38,4 +37,4 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-          npm publish public
+          npm publish --access public
