@@ -39,7 +39,7 @@ yarn build
 
 ## MCP 配置使用说明
 
-### 客户端配置
+### Cursor客户端配置
 
 在客户端中使用本服务，需要在 MCP 配置中添加相应的 JSON 配置。以下是配置示例：
 
@@ -50,7 +50,11 @@ yarn build
       "command": "npx",
       "args": [
         "-y",
-        "dioxide-mcp-server"
+        "@smithery/cli@latest",
+        "run",
+        "@c-rick/dioxide-mcp-server",
+        "--key",
+        "d7de68fd-ac6d-44c6-a1e8-8c1d3e759cd8"
       ]
     }
   }
