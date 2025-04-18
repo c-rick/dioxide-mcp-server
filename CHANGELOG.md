@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/c-rick/dioxide-mcp-server/compare/v1.5.0...v1.5.1) (2025-04-18)
+
+## [1.5.0](https://github.com/c-rick/dioxide-mcp-server/compare/v1.4.0...v1.5.0) (2025-04-18)
+
+
+### Features
+
+* update readme & add smithery yaml ([dae7c80](https://github.com/c-rick/dioxide-mcp-server/commit/dae7c80d5423b3fb073e260559a2a6f9960b875d))
+
 ## [1.4.0](https://github.com/c-rick/dioxide-mcp-server/compare/v1.3.0...v1.4.0) (2025-04-18)
 
 
