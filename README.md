@@ -1,4 +1,5 @@
 # Dioxide MCP Server
+[![smithery badge](https://smithery.ai/badge/@c-rick/dioxide-mcp-server)](https://smithery.ai/server/@c-rick/dioxide-mcp-server)
 
 基于 Model Context Protocol (MCP) 的 Dioxide 水龙头服务器，用于在测试网络上提供 Dioxide 代币。
 
@@ -15,6 +16,15 @@
 
 ## 安装
 
+### Installing via Smithery
+
+To install dioxide-mcp-server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@c-rick/dioxide-mcp-server):
+
+```bash
+npx -y @smithery/cli install @c-rick/dioxide-mcp-server --client claude
+```
+
+### Manual Installation
 ```bash
 # 克隆仓库
 git clone git@github.com:c-rick/dioxide-mcp-server.git
